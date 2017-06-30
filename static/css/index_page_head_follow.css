@@ -1,0 +1,262 @@
+/*头部导航附属栏*/
+.page-head-follow {
+    width: 100%;
+    height: 80px;
+    margin: 10px auto;
+    display: flex;
+}
+/*小米logo*/
+.follow-logo-bar {
+    height: 100%;
+    width: 300px;
+    margin-top: 0;
+    margin-left: 3%;
+}
+.follow-logo-static {
+    position: relative;
+    height: 60px;
+    width: 60px;
+    top: 15%;
+    left: 0;
+    background: #ff6700;
+    background-image: url(../pic/mi-logo.png);
+    background-position: center center;
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+.follow-logo-gif {
+    position: relative;
+    top: -62%;
+    left: 25%;
+    height: 70px;
+    width: 200px;
+    background: url(../pic/mix_gif.gif) no-repeat;
+    cursor: pointer;
+}
+.follow-logo-static a, .follow-logo-gif a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+/*小米产品分类区*/
+.follow-sorts {
+    position: relative;
+    top: -7%;
+    left: -2%;
+    height: 70px;
+    line-height: 70px;
+    padding: 0;
+}
+.follow-sorts li {
+    float: left;
+    font-size: 16px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+/*小米产品搜索栏*/
+.follow-search {
+    position: relative;
+    top: 20px;
+    left: 0;
+    height: 60px;
+    width: 300px;
+    line-height: 60px;
+    box-sizing: border-box;
+}
+.search-container {
+    position: relative;
+    top: 15px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+/*搜索输入框和按钮*/
+.search-input, .search-submit {
+    position: absolute;
+    top: -16px;
+    height: 100%;
+    box-sizing: border-box;
+    border: 1px solid #b0b0b0;
+}
+.search-input {
+    left: 0;
+    width: 80%;
+    padding-left: 8px;
+    border-right: 0;
+    font-size: 14px;
+    outline: none;
+    text-decoration: none;
+}
+.search-submit {
+    right: 0;
+    width: 20%;
+    cursor: pointer;
+    transition: background .2s ease-in;
+}
+.search-submit:hover {
+    background: #ff6700;
+}
+.search-submit i {
+    margin-left: 13px;
+    font-size: 20px;
+    color: #b0b0b0;
+    transition: color .2s ease-in;
+}
+.search-submit:hover i {
+    color: #ffffff;
+}
+.search-border {
+    border-color: #ff6700;
+}
+/*搜索提示热词*/
+.search-hot-words {
+    position: absolute;
+    top: 0;
+    left: 37%;
+    font-size: 12px;
+    opacity: 1;
+    transition: opacity .2s ease;
+}
+.hot-word1, .hot-word2 {
+    height: 20px;
+    line-height: 20px;
+    background: #eeeeee;
+    transition: background .2s ease-in;
+}
+.hot-word1:hover, .hot-word2:hover {
+    background: #ff6700;
+}
+.hot-word1 {
+    float: left;
+    margin-right: 10px;
+}
+.hot-word2 {
+    float: right;
+}
+.hot-word1 a, .hot-word2 a {
+    color: #757575;
+    text-decoration: none;
+    transition: color .2s ease-in;
+}
+.hot-word1:hover a, .hot-word2:hover a {
+    color: #ffffff;
+}
+/*搜索关键字和结果*/
+.search-keywords {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 44px;
+    z-index: 10;
+    width: 300px;
+    height: auto;
+    box-sizing: border-box;
+    border: 1px solid #ff6700;
+    border-top: 0;
+}
+.keywords-list {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+.keywords-list li {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    cursor: default;
+    transition: background .1s ease-in;
+}
+.keywords-list li:hover {
+    background: #fafafa;
+}
+.keywords-name, .keywords-number {
+    height: 100%;
+    width: 50%;
+    box-sizing: border-box;
+}
+.keywords-name {
+    float: left;
+    padding-left: 20px;
+    text-align: left;
+    color: #333333;
+}
+.keywords-number {
+    float: right;
+    padding-right: 20px;
+    text-align: right;
+    color: #b0b0b0;
+}
+/*商品陈列区*/
+.sorts-container {
+    position: absolute;
+    z-index: 10;
+    top: 280px;
+    left: 0;
+    width: 100%;
+    height: 230px;
+    border-top: 1px solid #b0b0b0;
+    box-shadow: 0px 3px 6px #b0b0b0;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform .1s ease;
+}
+.sorts-bar {
+    width: 1226px;
+    height: 100%;
+    margin: 0 auto;
+}
+/*单件商品展示*/
+.sorts-product {
+    float: left;
+    width: 200px;
+    height: 100%;
+}
+/*商品标签*/
+.product-tag {
+    width: 50px;
+    height: 20px;
+    line-height: 20px;
+    margin: 0 auto;
+    font-size: 14px;
+    text-align: center;
+    color: #ff6700;
+    border: 1px solid #ff6700;
+}
+/*商品图片*/
+.product-img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+.product-img-add {
+    margin-top: 22px;
+}
+.product-img-link {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 10px 20px;
+}
+/*商品名称和价格*/
+.product-name, .product-price {
+    margin: 3px auto;
+    text-align: center;
+    font-size: 12px;
+}
+.product-name a {
+    text-decoration: none;
+    color: #757575;
+}
+.product-price {
+    color: #ff6700;
+    cursor: default;
+}
+/*商品分割*/
+.product-apart {
+    float: left;
+    height: 60%;
+    margin: 3% 1px;
+    border-left: 1px solid #b0b0b0;
+}
