@@ -53,6 +53,9 @@
     padding: 0 10px;
     cursor: pointer;
 }
+.follow-sorts li:hover {
+    color: #ff6700;
+}
 /*小米产品搜索栏*/
 .follow-search {
     position: relative;
@@ -191,11 +194,12 @@
 /*商品陈列区*/
 .sorts-container {
     position: absolute;
-    z-index: 10;
-    top: 280px;
+    z-index: 100;
+    top: 250px;
     left: 0;
     width: 100%;
     height: 230px;
+    background: #ffffff;
     border-top: 1px solid #b0b0b0;
     box-shadow: 0px 3px 6px #b0b0b0;
     transform: scaleY(0);
@@ -206,6 +210,12 @@
     width: 1226px;
     height: 100%;
     margin: 0 auto;
+}
+.follow-sorts:hover + .sorts-container {
+    transform: scaleY(1);
+}
+.sorts-container:hover {
+    transform: scaleY(1);
 }
 /*单件商品展示*/
 .sorts-product {

@@ -1,0 +1,150 @@
+/*轮播图和产品详细分类*/
+.page-body-head {
+    position: relative;
+    z-index: 1;
+    width: 1226px;
+    height: 460px;
+    margin: 40px auto;
+    border: 1px solid #000;
+}
+/*轮播图图片切换*/
+.page-body-head-imgs {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.page-body-head-imgs > li {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all .5s ease-out;
+}
+#page-body-head-imgs .on {
+  display: block;
+  opacity: 1;
+}
+.page-body-head-imgs img {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+/*轮播图按钮*/
+.page-body-head-order {
+  width: 120px;
+  height: 10px;
+  position: absolute;
+  z-index: 20;
+  top: 90%;
+  left: 85%;
+  display: flex;
+  justify-content: space-between;
+}
+.page-body-head-order > li {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  box-sizing: content-box;
+  background: rgba(0, 0, 0, .4);
+  box-shadow: 0 0 3px #4d4c4c;
+  cursor: pointer;
+}
+#page-body-head-order .on {
+  background: #fff;
+}
+/*控制图片左右切换的箭头*/
+.left-array, .right-array {
+    position: absolute;
+    top: 45%;
+    z-index: 10;
+    width: 40px;
+    height: 70px;
+    border-radius: 5px;
+    font-size: 50px;
+    font-weight: 500;
+    color: #b0b0b0;
+    cursor: pointer;
+    transition: color .2s ease-in;
+    transition: background .2s ease-in;
+}
+.left-array {
+    left: 250px;
+}
+.right-array {
+    right: 0;
+}
+.left-array:hover, .right-array:hover {
+    background: #333333;
+    color: #ffffff;
+}
+/*分类总括*/
+.page-body-head-container {
+    position: absolute;
+    z-index: 50;
+    width: 250px;
+    height: 100%;
+    background: rgba(0, 0, 0, .6);
+}
+.container-bar {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 10px auto;
+}
+.container-bar li {
+    margin: 0;
+    padding: 0;
+    height: 43px;
+    line-height: 45px;
+    transition: background .1s ease;
+}
+.container-bar li:hover {
+    background: #ff6700;
+}
+.container-bar li a {
+    display: block;
+    padding-left: 30px;
+    font-size: 14px;
+    color: #ffffff;
+    text-decoration: none;
+}
+.container-bar li i {
+    position: absolute;
+    right: 10px;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: bolder;
+    font-style: normal;
+}
+/*右侧产品详细分类*/
+.page-body-head-box {
+    position: absolute;
+    z-index: 50;
+    left: 250px;
+    top: 0;
+    width: auto;
+    height: 100%;
+    padding: 0;
+    background: #ffffff;
+}
+.box-bar1, .box-bar2, .box-bar3, .box-bar4 {
+    float: left;
+    width: 243px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #000;
+}
+.box-bar1 li, .box-bar2 li, .box-bar3 li, .box-bar4 li {
+    width: 100%;
+    height: 76px;
+    line-height: 76px;
+    border: 1px solid #000;
+}

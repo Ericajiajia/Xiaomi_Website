@@ -17,6 +17,14 @@ var searchHotWords = document.getElementsByClassName('search-hot-words')[0]
 // 对产品展示传参
 var productShow = function (sort1) {
     var i
+    sortsContainer.style.display = 'block'
+    for (i = 0; i < sortsProduct.length; i++) {
+        let _i = i
+        if (_i < productApart.length) {
+            productApart[_i].style.display = 'none'
+        }
+        sortsProduct[_i].style.display = 'none'
+    }
     for (i = 0; i < sort1.length; i++) {
         let _i = i
         sortsProduct[_i].style.display = 'block'
@@ -32,20 +40,13 @@ var productShow = function (sort1) {
         productImgLink[_i].getElementsByTagName('img')[0].alt = sort1[_i].name
         productName[_i].getElementsByTagName('a')[0].innerHTML = sort1[_i].name
         productPrice[_i].innerHTML = sort1[_i].price
-        productApart[_i].style.display = 'block'
-    }
-    productApart[i - 1].style.display = 'none'
-    for (; i < sortsProduct.length; i++) {
-        let _i = i
-        if (_i < productApart.length) {
-            productApart[_i].style.display = 'none'
+        if (_i < sort1.length - 1) {
+            productApart[_i].style.display = 'block'
         }
-        sortsProduct[_i].style.display = 'none'
     }
 }
 // 鼠标滑过产品分类的事件委托
 followSorts.addEventListener('mouseover', function (e) {
-    sortsContainer.style.transform = 'scaleY(1)'
     switch (e.target.innerHTML) {
         case '小米手机': productShow(sort1)
             break
@@ -61,11 +62,14 @@ followSorts.addEventListener('mouseover', function (e) {
             break
         case '智能硬件': productShow(sort7)
             break
+        case '服务': sortsContainer.style.display = 'none'
+            break
+        case '社区': sortsContainer.style.display = 'none'
+            break
         default: break
     }
 })
 followSorts.addEventListener('mouseout', function () {
-    sortsContainer.style.transform = 'scaleY(0)'
 })
 // 搜索栏的事件委托
 searchInput.addEventListener('focus', function () {
