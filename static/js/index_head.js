@@ -69,8 +69,6 @@ followSorts.addEventListener('mouseover', function (e) {
         default: break
     }
 })
-followSorts.addEventListener('mouseout', function () {
-})
 // 搜索栏的事件委托
 searchInput.addEventListener('focus', function () {
     searchKeywords.style.display = 'block'

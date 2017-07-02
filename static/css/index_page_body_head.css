@@ -4,8 +4,8 @@
     z-index: 1;
     width: 1226px;
     height: 460px;
-    margin: 40px auto;
-    border: 1px solid #000;
+    margin: 40px auto 0;
+    border-radius: 3px;
 }
 /*轮播图图片切换*/
 .page-body-head-imgs {
@@ -54,9 +54,13 @@
   background: rgba(0, 0, 0, .4);
   box-shadow: 0 0 3px #4d4c4c;
   cursor: pointer;
+  transition: background .1s ease;
 }
 #page-body-head-order .on {
-  background: #fff;
+  background: #ffffff;
+}
+#page-body-head-order > li:hover {
+  background: #ffffff;
 }
 /*控制图片左右切换的箭头*/
 .left-array, .right-array {
@@ -84,25 +88,20 @@
     color: #ffffff;
 }
 /*分类总括*/
-.page-body-head-container {
+.container-bar {
     position: absolute;
     z-index: 50;
     width: 250px;
     height: 100%;
-    background: rgba(0, 0, 0, .6);
-}
-.container-bar {
-    position: absolute;
-    width: 100%;
-    height: auto;
     padding: 0;
-    margin: 10px auto;
+    margin: 0;
+    background: rgba(0, 0, 0, .6);
 }
 .container-bar li {
     margin: 0;
     padding: 0;
-    height: 43px;
-    line-height: 45px;
+    height: 46px;
+    line-height: 46px;
     transition: background .1s ease;
 }
 .container-bar li:hover {
@@ -125,26 +124,68 @@
 }
 /*右侧产品详细分类*/
 .page-body-head-box {
+    display: none;
     position: absolute;
     z-index: 50;
-    left: 250px;
+    left: 248px;
     top: 0;
     width: auto;
     height: 100%;
     padding: 0;
     background: #ffffff;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, .18);
+}
+.container-bar:hover + .page-body-head-box {
+    display: block;
+}
+.page-body-head-box:hover {
+    display: block;
 }
 .box-bar1, .box-bar2, .box-bar3, .box-bar4 {
     float: left;
-    width: 243px;
+    width: 244px;
     height: 100%;
     margin: 0;
     padding: 0;
-    border: 1px solid #000;
 }
 .box-bar1 li, .box-bar2 li, .box-bar3 li, .box-bar4 li {
     width: 100%;
     height: 76px;
     line-height: 76px;
-    border: 1px solid #000;
+    cursor: pointer;
+    transition: color .2s ease;
+}
+.box-bar1 li:hover .box-bar-name, .box-bar2 li:hover .box-bar-name, .box-bar3 li:hover .box-bar-name, .box-bar4 li:hover .box-bar-name {
+  color: #ff6700;
+}
+.box-bar1 li a, .box-bar2 li a, .box-bar3 li a, .box-bar4 li a {
+    display: block;
+    text-decoration: none;
+    color: #333333;
+    font-size: 14px;
+}
+.box-bar-img {
+    float: left;
+    margin-top: 18px;
+    margin-left: 20px;
+}
+.box-bar-name {
+    float: left;
+    margin-left: 5px;
+}
+.box-bar-tag {
+    position: relative;
+    top: 0;
+    left: 45px;
+    padding: 3px 14px;
+    border: 1px solid #ff6700;
+    color: #ff6700;
+    font-size: 12px;
+    transition: color .2s ease;
+    transition: background .2s ease;
+}
+.box-bar-tag:hover {
+    background: #ff6700;
+    color: #ffffff;
 }

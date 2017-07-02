@@ -153,7 +153,7 @@
     z-index: 10;
     width: 300px;
     height: auto;
-    box-sizing: border-box;
+    background: #ffffff;
     border: 1px solid #ff6700;
     border-top: 0;
 }
