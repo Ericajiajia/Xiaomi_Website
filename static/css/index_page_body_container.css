@@ -1,0 +1,220 @@
+/*中间产品展示区*/
+.page-body {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 50px 0;
+    background: #f5f5f5;
+    color: #333333;
+}
+.page-body-container {
+    width: 1226px;
+    height: auto;
+    margin: 0 auto;
+    border: 1px solid #000;
+}
+.body-parts {
+    width: 100%;
+    height: 670px;
+    margin: 0 auto 40px;
+}
+/*左侧标题和固定图片*/
+.parts-head {
+    float: left;
+    width: 240px;
+    height: 100%;
+}
+.parts-head-title {
+    height: 30px;
+    font-size: 22px;
+    color: #333333;
+}
+.parts-head-imgs {
+    height: 640px;
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+    clear: both;
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+.parts-head-imgs a {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: box-shadow .3s ease;
+    transition: transform .3s ease;
+}
+.parts-head-imgs a:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, .1);
+    transform: translate3d(0, -2px, 0);
+}
+/*右侧产品展示区 */
+.parts-body {
+    float: right;
+    width: 80%;
+    height: 100%;
+}
+/*右侧产品头部分类*/
+.parts-body-title {
+    float: right;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 10px;
+}
+.parts-body-title div {
+    display: inline-block;
+    margin-right: 20px;
+    height: 30px;
+    line-height: 30px;
+    color: #333333;
+    font-size: 16px;
+    text-align: center;
+    transition: color .2s ease;
+    transition: border-bottom .1s ease;
+}
+.body-title-hover {
+    color: #ff6700;
+    border-bottom: 2px solid #ff6700;
+    cursor: pointer;
+}
+/*右侧产品区域的产品*/
+.parts-body-products {
+    width: 100%;
+    height: 630px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+.parts-body-products >li {
+    width: 23%;
+    height: 48%;
+    text-align: center;
+}
+.not-last-block {
+    background: #ffffff;
+    font-size: 16px;
+    overflow: hidden;
+    transition: box-shadow .3s ease;
+    transition: transform .3s ease;
+}
+.not-last-block:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, .1);
+    transform: translate3d(0, -2px, 0);
+}
+/*产品标签和图片*/
+.parts-body-product-tag {
+    margin: 0 auto;
+    height: 18px;
+    width: 50px;
+    line-height: 16px;
+    background: #e53935;
+    font-size: 12px;
+    color: #ffffff;
+    text-align: center;
+}
+.parts-body-product-img {
+    display: block;
+    margin: 15px auto 0;
+}
+/*产品的名称、简介和价格*/
+.parts-body-product-name {
+    margin: 20px auto 10px;
+}
+.parts-body-product-detail {
+    margin: 0 auto;
+    font-size: 12px;
+    color: #b0b0b0;
+}
+.parts-body-product-price {
+    margin: 5px auto;
+    color: #ff6700;
+}
+/*产品的评论区*/
+.product-comment {
+    position: relative;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    height: 75px;
+    background: #ff6700;
+    font-size: 12px;
+    text-align: left;
+    transition: top .3s ease;
+}
+.not-last-block:hover .product-comment {
+    top: -50px;
+}
+.comment-content {
+    color: #ffffff;
+    margin: 0;
+    padding: 5px;
+}
+.comment-author {
+    margin: 0;
+    padding: 5px;
+    color: rgba(255, 255, 255, .6);
+}
+/*每栏最后两个框*/
+.last-block ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+.last-product, .product-more {
+    width: 100%;
+    height: 46%;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    transition: box-shadow .3s ease;
+    transition: transform .3s ease;
+}
+.last-product:hover, .product-more:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, .1);
+    transform: translate3d(0, -2px, 0);
+}
+/*每栏最后一件产品的信息*/
+.last-product-information, .product-more-title {
+    padding: 50px 0;
+    text-align: left;
+}
+.last-product-name {
+    margin: 0;
+    font-size: 16px;
+}
+.last-product-name a, .product-more-tag a {
+    color: #333333;
+    text-decoration: none;
+}
+.last-product-price {
+    margin: 5px 0 0;
+    font-size: 12px;
+    color: #ff6700;
+}
+.last-product-img {
+    padding: 30px 0;
+}
+/*浏览更多栏*/
+.product-more-tag {
+    margin: 0;
+    font-size: 22px;
+}
+.product-more-sort {
+    margin: 5px 0 0;
+    font-size: 12px;
+    color: #b0b0b0;
+}
+.product-more-icon {
+    padding: 40px 0;
+    color: #ff6700;
+    text-decoration: none;
+}

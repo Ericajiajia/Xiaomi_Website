@@ -1,3 +1,4 @@
+// 产品分类栏的数据
 var sort1 = [
   {
     'src': 'static/pic/sort1_pic1.png',
@@ -232,5 +233,69 @@ var sort7 = [
     'tag': '',
     'name': '查看全部<br />智能硬件',
     'price': ''
+  }
+]
+
+// 明星产品的数据
+var starsProduct = [
+  {
+    'src': 'static/pic/rainbow1.png',
+    'name': '小米5c 64GB 移动版',
+    'detail': '直降200元，轻薄金属机身',
+    'price': '1299元'
+  },
+  {
+    'src': 'static/pic/rainbow2.png',
+    'name': '小米5s Plus',
+    'detail': '5.7\" 大屏双摄像头，轻薄金属机身',
+    'price': '2299元起'
+  },
+  {
+    'src': 'static/pic/rainbow3.png',
+    'name': '小米MIX',
+    'detail': '下单立减200元，领券再减50元',
+    'price': '3499元起'
+  },
+  {
+    'src': 'static/pic/rainbow4.png',
+    'name': '小米电视4A 49英寸 标准版',
+    'detail': '直降300元，全高清HDR ',
+    'price': '2299元'
+  },
+  {
+    'src': 'static/pic/rainbow5.png',
+    'name': '小米笔记本',
+    'detail': '更轻更薄，像杂志一样随身携带',
+    'price': '3599元起'
+  },
+  {
+    'src': 'static/pic/rainbow6.png',
+    'name': '10000mAh小米移动电源2',
+    'detail': '双向快充，高密度锂聚合物电芯',
+    'price': '79元'
+  },
+  {
+    'src': 'static/pic/rainbow7.png',
+    'name': '小米手环 2',
+    'detail': 'OLED 显示屏幕，升级计步算法',
+    'price': '149元'
+  },
+  {
+    'src': 'static/pic/rainbow8.png',
+    'name': '米兔儿童手表Q',
+    'detail': '直降50元，11重安全设计',
+    'price': '249元'
+  },
+  {
+    'src': 'static/pic/rainbow9.png',
+    'name': '米家空气净化器Pro',
+    'detail': 'OLED显示屏幕，激光颗粒物传感器',
+    'price': '1499元'
+  },
+  {
+    'src': 'static/pic/rainbow10.png',
+    'name': '小米路由器3',
+    'detail': '更快更强，不止四天线',
+    'price': '149元'
   }
 ]
