@@ -34,8 +34,8 @@ var dataPart = [
       'name': '米家压力IH电饭煲',
       'detail': '智能烹饪，灰铸铁粉体涂层内胆',
       'price': '999元',
-      'content': '中国人终于可以不要到国外去买电饭煲了！坐在家里点点手...',
-      'author': '来自于 姚士祥 的评价'
+      'content': '',
+      'author': ''
     },
     {
       'src': 'static/pic/appliances_hot7.jpg',
@@ -128,8 +128,10 @@ var dataPart = [
       'price': '299元',
       'content': '太喜欢了，女朋友都可以了不要',
       'author': '来自于 小米-范儿 的评价'
-    }],
-  [{
+    }
+  ],
+  [
+    {
       'src': 'static/pic/appliances_hot1.png',
       'tag': '免邮费',
       'name': '小米电视4A 49英寸',
@@ -191,8 +193,10 @@ var dataPart = [
       'price': '299元',
       'content': '太喜欢了，女朋友都可以了不要',
       'author': '来自于 小米-范儿 的评价'
-    }],
-  [{
+    }
+  ],
+  [
+    {
       'src': 'static/pic/appliances_hot1.png',
       'tag': '有赠品',
       'name': '小米电视4A 49英寸',
@@ -254,8 +258,10 @@ var dataPart = [
       'price': '299元',
       'content': '太喜欢了，女朋友都可以了不要',
       'author': '来自于 小米-范儿 的评价'
-    }],
-  [{
+    }
+  ],
+  [
+    {
       'src': 'static/pic/appliances_hot2.png',
       'tag': '',
       'name': '米家压力IH电饭煲',
@@ -317,53 +323,34 @@ var dataPart = [
       'price': '299元',
       'content': '太喜欢了，女朋友都可以了不要',
       'author': '来自于 小米-范儿 的评价'
-    }]
+    }
+  ]
 ]
 var dataLast = [
   {
       'src': 'static/pic/appliances_hot8.png',
-      'tag': '',
-      'name': '悦米机械键盘',
-      'detail': '铝合金机身，TTC红轴，87 键',
-      'price': '299元',
-      'content': '太喜欢了，女朋友都可以了不要',
-      'author': '来自于 小米-范儿 的评价'
+      'name': 'Yeelight LED 吸顶灯',
+      'price': '359元'
     },
   {
       'src': 'static/pic/fitting_pic8.jpg',
-      'tag': '',
-      'name': '悦米机械键盘',
-      'detail': '铝合金机身，TTC红轴，87 键',
-      'price': '299元',
-      'content': '太喜欢了，女朋友都可以了不要',
-      'author': '来自于 小米-范儿 的评价'
+      'name': '米家车载空气净化器滤芯',
+      'price': '69元'
     },
   {
       'src': 'static/pic/appliances_hot8.png',
-      'tag': '',
-      'name': '悦米机械键盘',
-      'detail': '铝合金机身，TTC红轴，87 键',
-      'price': '299元',
-      'content': '太喜欢了，女朋友都可以了不要',
-      'author': '来自于 小米-范儿 的评价'
+      'name': '小米蓝牙音箱',
+      'price': '189元'
     },
   {
       'src': 'static/pic/fitting_pic8.jpg',
-      'tag': '',
-      'name': '悦米机械键盘',
-      'detail': '铝合金机身，TTC红轴，87 键',
-      'price': '299元',
-      'content': '太喜欢了，女朋友都可以了不要',
-      'author': '来自于 小米-范儿 的评价'
+      'name': '红米4X 高透软胶保护套 透明',
+      'price': '19元'
     },
   {
       'src': 'static/pic/appliances_hot8.png',
-      'tag': '',
-      'name': '悦米机械键盘',
-      'detail': '铝合金机身，TTC红轴，87 键',
-      'price': '299元',
-      'content': '太喜欢了，女朋友都可以了不要',
-      'author': '来自于 小米-范儿 的评价'
+      'name': '小米V领短袖T恤 女款',
+      'price': '39元'
     }
 ]
 
